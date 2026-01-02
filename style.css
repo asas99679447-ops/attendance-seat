@@ -1,0 +1,60 @@
+body {
+  font-family: 맑은고딕;
+  background: #f4f6f8;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.container {
+  width: 380px;
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+}
+
+select, input, button {
+  width: 100%;
+  padding: 10px;
+  margin: 6px 0;
+}
+
+.time-select {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.mode {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 6px;
+}
+
+.mode button {
+  flex: 1;
+}
+
+.mode .active {
+  background: #2563eb;
+  color: white;
+}
+
+.seats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.seat {
+  background: #e5e7eb;
+  padding: 8px;
+  border-radius: 10px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.seat.selected {
+  outline: 3px solid #2563eb;
+}
